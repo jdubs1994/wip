@@ -2,7 +2,6 @@ import runpod
 import time  
 import os
 from huggingface_hub import login, snapshot_download
-import torch
 
 def handler(event):
     HUGGING_FACE_TOKEN = os.getenv('HUGGING_FACE_TOKEN')
@@ -10,6 +9,7 @@ def handler(event):
     login(HUGGING_FACE_TOKEN)
     
     print(f"Worker Start")
+
     # input = event['input']
     
     
