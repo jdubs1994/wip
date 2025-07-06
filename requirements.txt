@@ -1,1 +1,5 @@
-runpod==1.7.12
+runpod
+hf_transfer
+torch
+huggingface_hub
+git+https://github.com/huggingface/diffusers.git
